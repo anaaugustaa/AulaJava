@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 // POO -> Programação Orientada Objeto.
 // É uma linguagem Fortemente tipada.
 // Independente de plataforma, multiplataforma.
@@ -19,8 +20,8 @@
 //long 64bits -> -9.223.372.036.854.775.808 a 9.223.372.036.854.775.807
 //numeros decimais =1.2, 3.4, 5.6, 7.8, 9.0
 //5.50
-//float => 32 bits => preciso simples
-//double => 64 bits => precis
+//float => 32 bits => precisao simples
+//double => 64 bits => precisao dupla
 
 //Todos menos o string são primitivos
 //Char  é usado para apenas um caractere, por isso ele é
@@ -29,6 +30,15 @@
 //aspas duplas porque see trata de apenas frases, quando se trata
 //de apenas um caractere será sempre CHAR
 //boolean => verdadeiro ou falso
+
+//Lista dinamica é uma lista em que podemos acrescentar ou remover informação
+//de uma lista da forma que desejamos
+
+//Diferença de Array e Vetor
+//Array - puxa quantidade infinita de informação dentro do banco de dados
+//
+
+
 
 public class main {
     public static void(String[] args) {
@@ -72,28 +82,57 @@ public static void(String[] args) {
 
 
 
-class aula01{
-    public static void main(String[] args) {
+class aula01 {
+    public static void main(String[] args){
         byte b = 100;
         short s = 10000;
-        int i = 100000;
-        long l = 1000000L;
+        int i []= {1,2,3,4,5};
+        // posição 0 1 2 3 4
+        long l = 10000000L;
         float f = 10.5f;
         double d = 20.5;
         char c = 'A';
-        boolean bool = true;
-        
-        if (bool){
-            System.out.println("VERDADEIRO");
+        boolean bool = false;
+        String nome[] = {"Ana ","Clara ","Augusta","Machado"};
+        // posição         0       1         2        3
+        String email = "anaclaraaugusta@yahoo.com";
+        int[] contador = new int [10]
+        nome [2] = "Elano";
+        nome [5] = "Fernanda";
+        if (email == "anaclaraaugusta@yahoo.com"){
+            System.ouprintln("LOGIN OK");
 
         }else{
-            System.out.println("FALSO");
-
+            System.ou.println( nome[0]+" "+nome[1] "")
         }
 
+        if (bool) {
+            System.out.println("VERDADEIRO");
 
+        }else {
+            System.out.println("Errado o nome é: "+nome[0]+" "+nome[1]"" +nome[2]);
+
+        }
+    }
+} 
+
+
+
+
+class array{
+    public static void main (String[] args) {
+        ArrayList<String> nomes = new ArrayList<>();
+        nomes.add("Aninha");
+        nomes.add("Banana")
+        nomes.add("Sally")
+
+        System.out.println(nomes.get(0));
+
+        nomes.remove(0)
+
+        System.out.println(nomes.get(0));
+
+        
     }
 
-
 }
-
